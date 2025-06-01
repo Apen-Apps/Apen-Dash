@@ -1,6 +1,6 @@
-import { GalleryVerticalEnd } from "lucide-react";
+import { GalleryVerticalEnd } from "lucide-react"
 
-import { LoginForm } from "@/components/login-form";
+import { LoginForm } from "@/components/login-form"
 
 export default function LoginPage() {
   return (
@@ -8,12 +8,10 @@ export default function LoginPage() {
       <div className="flex flex-col gap-4 p-6 md:p-10">
         <div className="flex justify-center gap-2 md:justify-start">
           <a href="#" className="flex items-center gap-2 font-medium">
-            <div className=" flex items-center justify-center">
-              <img
-                src="/logo-dark.svg"
-                alt="Image"
-              />
+            <div className="bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md">
+              <GalleryVerticalEnd className="size-4" />
             </div>
+            Acme Inc.
           </a>
         </div>
         <div className="flex flex-1 items-center justify-center">
@@ -24,11 +22,11 @@ export default function LoginPage() {
       </div>
       <div className="bg-muted relative hidden lg:block">
         <img
-          src="/fantasy-style-clouds-with-city.jpg"
+          src="/placeholder.svg"
           alt="Image"
-          className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.8] dark:grayscale"
+          className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
         />
       </div>
     </div>
-  );
+  )
 }
